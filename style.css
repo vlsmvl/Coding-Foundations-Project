@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(49, 49, 49);
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1e22e3;
 }
 
- /*  banner header */
-.banner-header {
+/* Navigation Bar */
+.nav-bar {
     display: flex;
     align-items: center;
     background-color: black;
@@ -17,6 +17,7 @@ body {
     padding: 18px;
 }
 
+/* Navigation Bar Left Column */
 .left-column {
     display: grid;
     width: 471px;
@@ -28,56 +29,56 @@ body {
     color: white;
 }
 
-.left-column > .explore {
+.left-column >.explore {
     height: 19px;
     margin-left: 23px;
 }
 
-.left-column > .explore a {
+.explore a {
     font-size: 15px;
-    color: yellow;  
+    color: yellow;
     font-weight: lighter;
 }
 
-.left-column > .links-wrapper {   
+.left-column > .links-wrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-} 
+}
 
+/*  Down Chevron Spark */
 .nav-link-spark {
     margin-left: 30px;
 }
 
 .nav-link-spark a {
-    color: rgba(189, 183, 183, 0.646); 
+    color: rgba(189, 183, 183, 0.646);
     font-weight: lighter;
     text-decoration: none;
 }
 
 .nav-link-spark i {
-    color:rgba(189, 183, 183, 0.646);
+    color: rgba(189, 183, 183, 0.646);
 }
-
 
 /* Spacer Between Left Column & Right Column */
 .spacer {
     flex-grow: 3;
 }
 
-/* Right Column */
+/* Navigation Bar Right Column */
 .right-column {
     display: flex;
     align-items: center;
-    justify-content: space-between;   
-    width: 283px; 
+    justify-content: space-between;
+    width: 283px;
 }
 
 .right-column a {
     font-size: small;
-    text-align: center;    
+    text-align: center;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .right-column > .nav-link-create {
@@ -92,7 +93,7 @@ body {
 
 .right-column > .nav-link-search {
     font-size: 1.5em;
-    color:rgba(189, 183, 183, 0.646); 
+    color: rgba(189, 183, 183, 0.646);
 }
 
 .right-column > .nav-link-login {
@@ -107,83 +108,102 @@ body {
     border-radius: 2px;
 }
 
-
-/* Main Section */ 
-.main-section { 
+/* Front Section */
+.front-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: -4px;
-    background: linear-gradient(90deg, rgba(43,46,51,0.7328725961538461) 10%, rgba(17,18,22,1) 91%);
- 
+    background: linear-gradient(30deg, rgba(9, 9, 10, 0.755) 1%, rgba(61, 64, 84, 0.981) 60%);
+    padding-top: 40px;
 }
 
-.front-text {
-    padding: 60px;
-    width: 700px;
+.left-section {
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    flex-direction: column;
 }
-
-.codepen-text h1 {
-    letter-spacing: 1px;
-    line-height: 40px;
+ .left-section-text > .text1 p {
+    font-size: 3em;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size:34px;
-    font-weight: 398;
-}
+ }
 
-.codepen-text p {
-    letter-spacing: 1px;
-    line-height: 40px;
-    color: rgb(179, 175, 175);
-    font-family: 'Roboto', sans-serif;
-    font-size: 34px;
-    font-weight: 398;
-}
+ .left-section-text > .text2 p {
+    font-size: 2.5em;
+    color: rgb(200, 200, 200);
+ }
 
-/* btn-wrapper */
+ /* Sign Up for Free & Learn More Buttons */
 .btn-wrapper {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    width: 484px;   
-    font-family: 'Roboto', sans-serif;  
+    align-items: center;
+    width: 519px;
+    font-size: xx-large;
     font-weight: bold;
-    font-size: 2em;
+    height: 151px;
 }
 
 .signup-btn {
-    border-radius: 2px;
-    padding: 15px 22px 15px 20px;
     background-color: #47CF73;
+    padding: 20px 30px;
+    border-radius: 3px;
 }
 
 .signup-btn a {
-    border-radius: 2px;
     color: black;
     text-decoration: none;
+    text-align: center;
 }
 
 .learn-more-btn {
-    padding: 15px 22px 15px 20px;
     background-color: black;
+    padding: 20px 30px;
     border-radius: 3px;
 }
 
 .learn-more-btn a {
-    border-radius: 2px;
     color: rgb(206, 206, 206);
     text-decoration: none;
+    text-align: center;
 }
 
-
-.front-image > .image img {
-    border-radius: 5px;
+/* Right Section */
+.right-section-image {
+    background-image: url(image/front-image.png);
+    width: 100%;
+    height: 695px;
+    border-radius: 7px;
 }
 
-.front-image > .tittle-image h3 {
-    text-align: right;
-    height: 14px;
-    width: 413px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+/* Image Title */
+.right-section-title h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.2em;
 }
 
+/* Codepen Projects Blue Text */
+.blue {
+    color: rgb(15, 218, 245);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    height: 49px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #3e3e3e;
+    font-size: larger;
+}
+
+.codepen {
+    width: 40%;
+    border: 1px solid #5a5a5a;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
